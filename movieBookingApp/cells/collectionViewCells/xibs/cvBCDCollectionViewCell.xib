@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="cvBCDCollectionViewCell" customModule="movieBookingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TSc-Hi-6is">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWk-Nr-2nY">
+                        <rect key="frame" x="75" y="25" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="TSc-Hi-6is" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MDz-rA-RoT"/>
+                <constraint firstAttribute="trailing" secondItem="TSc-Hi-6is" secondAttribute="trailing" id="Mbg-b3-irw"/>
+                <constraint firstAttribute="bottom" secondItem="TSc-Hi-6is" secondAttribute="bottom" id="dqk-2b-xvV"/>
+                <constraint firstItem="bWk-Nr-2nY" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="nrv-zh-1zg"/>
+                <constraint firstItem="TSc-Hi-6is" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qxO-5G-JER"/>
+                <constraint firstItem="bWk-Nr-2nY" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="zof-KB-cEi"/>
+            </constraints>
+            <size key="customSize" width="171" height="67"/>
+            <connections>
+                <outlet property="backView" destination="TSc-Hi-6is" id="5Ps-Ui-YZh"/>
+                <outlet property="cinema" destination="bWk-Nr-2nY" id="NFg-xQ-Qaa"/>
+            </connections>
+            <point key="canvasLocation" x="225.36231884057972" y="88.058035714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

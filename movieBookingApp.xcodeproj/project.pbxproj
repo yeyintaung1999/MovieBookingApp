@@ -1,0 +1,1237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D9966390C66EF1860549F8A /* Pods_movieBookingApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB23AB0C46FF26C1A7347AD /* Pods_movieBookingApp.framework */; };
+		2192552019CF2EB6B5F94ACB /* Pods_movieBookingAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98F29DFF4D2180575BC03C10 /* Pods_movieBookingAppTests.framework */; };
+		6701C88F28072C93008847E6 /* RegisterWithEmailStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6701C88E28072C93008847E6 /* RegisterWithEmailStruct.swift */; };
+		670296D1289E19BC001A4390 /* SeatPlanViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670296D0289E19BC001A4390 /* SeatPlanViewModelTests.swift */; };
+		670296D4289E1A2B001A4390 /* MockSeatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670296D3289E1A2B001A4390 /* MockSeatModel.swift */; };
+		6702E21227C35FCF005AF1E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E21127C35FCF005AF1E9 /* AppDelegate.swift */; };
+		6702E21427C35FCF005AF1E9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E21327C35FCF005AF1E9 /* SceneDelegate.swift */; };
+		6702E21627C35FCF005AF1E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E21527C35FCF005AF1E9 /* ViewController.swift */; };
+		6702E21927C35FCF005AF1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6702E21727C35FCF005AF1E9 /* Main.storyboard */; };
+		6702E21B27C35FD3005AF1E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6702E21A27C35FD3005AF1E9 /* Assets.xcassets */; };
+		6702E21E27C35FD3005AF1E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6702E21C27C35FD3005AF1E9 /* LaunchScreen.storyboard */; };
+		6702E23127C36896005AF1E9 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E23027C36896005AF1E9 /* LogInViewController.swift */; };
+		6702E23427C36EAF005AF1E9 /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E23327C36EAF005AF1E9 /* extensions.swift */; };
+		6702E23A27C3D5D5005AF1E9 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E23927C3D5D5005AF1E9 /* MovieViewController.swift */; };
+		6702E23C27C3F270005AF1E9 /* PromoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E23B27C3F270005AF1E9 /* PromoViewController.swift */; };
+		6702E23F27C3F4E0005AF1E9 /* CastCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E23D27C3F4E0005AF1E9 /* CastCollectionViewCell.swift */; };
+		6702E24027C3F4E0005AF1E9 /* CastCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6702E23E27C3F4E0005AF1E9 /* CastCollectionViewCell.xib */; };
+		6702E24327C3FA4A005AF1E9 /* ComboTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E24127C3FA4A005AF1E9 /* ComboTableViewCell.swift */; };
+		6702E24427C3FA4A005AF1E9 /* ComboTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6702E24227C3FA4A005AF1E9 /* ComboTableViewCell.xib */; };
+		6702E24727C4050A005AF1E9 /* paymethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E24527C40509005AF1E9 /* paymethodTableViewCell.swift */; };
+		6702E24827C4050A005AF1E9 /* paymethodTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6702E24627C4050A005AF1E9 /* paymethodTableViewCell.xib */; };
+		6702E24B27C40AB6005AF1E9 /* enterPromoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6702E24927C40AB5005AF1E9 /* enterPromoTableViewCell.swift */; };
+		6702E24C27C40AB6005AF1E9 /* enterPromoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6702E24A27C40AB5005AF1E9 /* enterPromoTableViewCell.xib */; };
+		6704FDF62838D79F002FAB50 /* SideSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6704FDF52838D79F002FAB50 /* SideSliderViewController.swift */; };
+		6704FDF8283909F6002FAB50 /* payMethodVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6704FDF7283909F6002FAB50 /* payMethodVO.swift */; };
+		67079607280717B000555588 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67079606280717B000555588 /* EndPoints.swift */; };
+		670796092807180700555588 /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670796082807180700555588 /* constants.swift */; };
+		6716CAC92841E3CE00F91C17 /* ContentTypeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6716CAC82841E3CE00F91C17 /* ContentTypeRepository.swift */; };
+		6716CACB2841E4E600F91C17 /* BelongToTypeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6716CACA2841E4E600F91C17 /* BelongToTypeObject.swift */; };
+		6716CACD2841E72400F91C17 /* BelongToCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6716CACC2841E72400F91C17 /* BelongToCollection.swift */; };
+		671E9C61282CD50D007F6C65 /* checkoutVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671E9C60282CD50D007F6C65 /* checkoutVO.swift */; };
+		672025AD27C7E2D2002C417E /* CardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672025AB27C7E2D2002C417E /* CardCollectionViewCell.swift */; };
+		672025AE27C7E2D2002C417E /* CardCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 672025AC27C7E2D2002C417E /* CardCollectionViewCell.xib */; };
+		67229985281282B600A5F0B4 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67229984281282B500A5F0B4 /* UserDefaults.swift */; };
+		6727661F2840B580008909E6 /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6727661E2840B580008909E6 /* GoogleAuth.swift */; };
+		6727B65227CD2C5200EB5553 /* firstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6727B65027CD2C5200EB5553 /* firstTableViewCell.swift */; };
+		6727B65327CD2C5200EB5553 /* firstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6727B65127CD2C5200EB5553 /* firstTableViewCell.xib */; };
+		673C1E7E28240D3200B97ED3 /* SeatStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673C1E7D28240D3200B97ED3 /* SeatStruct.swift */; };
+		673C1E8028242E2500B97ED3 /* CardCreateStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673C1E7F28242E2500B97ED3 /* CardCreateStruct.swift */; };
+		67407A872841CD43007CF3B1 /* movieObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67407A862841CD43007CF3B1 /* movieObject.swift */; };
+		67407A892841CEF9007CF3B1 /* movieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67407A882841CEF8007CF3B1 /* movieRepository.swift */; };
+		67407A8B2841D16E007CF3B1 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67407A8A2841D16D007CF3B1 /* BaseRepository.swift */; };
+		6741C07627C42C2500301F82 /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6741C07527C42C2500301F82 /* MainScreenViewController.swift */; };
+		67473BFA27C4BC3C00A1A93E /* secondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67473BF827C4BC3C00A1A93E /* secondTableViewCell.swift */; };
+		67473BFB27C4BC3C00A1A93E /* secondTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67473BF927C4BC3C00A1A93E /* secondTableViewCell.xib */; };
+		67473BFE27C4C09B00A1A93E /* payBtnTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67473BFC27C4C09B00A1A93E /* payBtnTableViewCell.swift */; };
+		67473BFF27C4C09B00A1A93E /* payBtnTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67473BFD27C4C09B00A1A93E /* payBtnTableViewCell.xib */; };
+		67473C0127C4C42400A1A93E /* ChooseCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67473C0027C4C42300A1A93E /* ChooseCardViewController.swift */; };
+		67473C0427C4C58100A1A93E /* PayButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67473C0327C4C58100A1A93E /* PayButtonDelegate.swift */; };
+		67473C0627C4CA0900A1A93E /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67473C0527C4CA0800A1A93E /* TicketViewController.swift */; };
+		674989B22849ADAC003FF5D0 /* SnackObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674989B12849ADAC003FF5D0 /* SnackObject.swift */; };
+		674989B42849AEF1003FF5D0 /* SnackRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674989B32849AEF1003FF5D0 /* SnackRepository.swift */; };
+		674989B62849B015003FF5D0 /* SnackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674989B52849B015003FF5D0 /* SnackModel.swift */; };
+		674989B82849B26A003FF5D0 /* SeatObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674989B72849B26A003FF5D0 /* SeatObject.swift */; };
+		674989BA2849B9F8003FF5D0 /* SeatPlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674989B92849B9F8003FF5D0 /* SeatPlanModel.swift */; };
+		674989BC2849BE7F003FF5D0 /* SeatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674989BB2849BE7F003FF5D0 /* SeatRepository.swift */; };
+		674BCF9128218E8A009DF7CD /* TimeSlotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674BCF8F28218E8A009DF7CD /* TimeSlotCollectionViewCell.swift */; };
+		674BCF9228218E8A009DF7CD /* TimeSlotCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 674BCF9028218E8A009DF7CD /* TimeSlotCollectionViewCell.xib */; };
+		674BCF9528219015009DF7CD /* CinemaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674BCF9328219015009DF7CD /* CinemaCollectionViewCell.swift */; };
+		674BCF9628219015009DF7CD /* CinemaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 674BCF9428219015009DF7CD /* CinemaCollectionViewCell.xib */; };
+		674ED69F2820DFC000EBCA78 /* CinemaListStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674ED69E2820DFC000EBCA78 /* CinemaListStruct.swift */; };
+		674ED6A1282101BE00EBCA78 /* SnackStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674ED6A0282101BE00EBCA78 /* SnackStruct.swift */; };
+		674ED6A3282104E400EBCA78 /* CinemaTimeSlotStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674ED6A2282104E400EBCA78 /* CinemaTimeSlotStruct.swift */; };
+		6755283C282569E40048D83C /* timeSlotVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755283B282569E40048D83C /* timeSlotVO.swift */; };
+		6755ECBD2812B46100FF5D1D /* MovieDetailStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755ECBC2812B46100FF5D1D /* MovieDetailStruct.swift */; };
+		676FC37F27C60A5F0095D47C /* AddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676FC37E27C60A5F0095D47C /* AddCardViewController.swift */; };
+		6780206428A134A200783141 /* invalidAuthentication.json in Resources */ = {isa = PBXBuildFile; fileRef = 67B22A59289D74FD00329D3F /* invalidAuthentication.json */; };
+		67B22A47289D517800329D3F /* SeatPlanPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B22A46289D517800329D3F /* SeatPlanPresenter.swift */; };
+		67B22A4F289D6C1900329D3F /* movieBookingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B22A4E289D6C1900329D3F /* movieBookingAppTests.swift */; };
+		67B22A5C289D797F00329D3F /* MockDataURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B22A5B289D797F00329D3F /* MockDataURL.swift */; };
+		67B22A5E289D7B0600329D3F /* NetworkAgentTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B22A5D289D7B0600329D3F /* NetworkAgentTest.swift */; };
+		67B22A5F289D7FFE00329D3F /* validResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 67B22A58289D746700329D3F /* validResponse.json */; };
+		67BB5EB8289B778B0042C9A2 /* SeatPlanViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB5EB7289B778B0042C9A2 /* SeatPlanViewModel.swift */; };
+		67BB5EBA289B7A330042C9A2 /* RxSeatPlanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BB5EB9289B7A330042C9A2 /* RxSeatPlanModel.swift */; };
+		67BBFE7D27C6750C008AC163 /* ChooseDateTimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BBFE7C27C6750C008AC163 /* ChooseDateTimeViewController.swift */; };
+		67BBFE8027C683F0008AC163 /* cvACollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BBFE7E27C683F0008AC163 /* cvACollectionViewCell.swift */; };
+		67BBFE8127C683F0008AC163 /* cvACollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBFE7F27C683F0008AC163 /* cvACollectionViewCell.xib */; };
+		67BBFE8427C68403008AC163 /* cvBCDCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BBFE8227C68403008AC163 /* cvBCDCollectionViewCell.swift */; };
+		67BBFE8527C68403008AC163 /* cvBCDCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBFE8327C68403008AC163 /* cvBCDCollectionViewCell.xib */; };
+		67BBFE8A27C69CDB008AC163 /* movieSliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BBFE8827C69CDB008AC163 /* movieSliderCollectionViewCell.swift */; };
+		67BBFE8B27C69CDB008AC163 /* movieSliderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67BBFE8927C69CDB008AC163 /* movieSliderCollectionViewCell.xib */; };
+		67CABD0F2848FF4A008CCF6A /* CinemaTimeSlotObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CABD0E2848FF4A008CCF6A /* CinemaTimeSlotObject.swift */; };
+		67CABD1128490000008CCF6A /* TimeSlotObject .swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CABD1028490000008CCF6A /* TimeSlotObject .swift */; };
+		67CABD132849010D008CCF6A /* repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CABD122849010D008CCF6A /* repository.swift */; };
+		67CABD15284902E2008CCF6A /* TimeSlotModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CABD14284902E2008CCF6A /* TimeSlotModel.swift */; };
+		67CD29DF2807121700493FA4 /* LoginWithEmailStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD29DE2807121700493FA4 /* LoginWithEmailStruct.swift */; };
+		67CD29E1280712C000493FA4 /* structHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD29E0280712C000493FA4 /* structHelpers.swift */; };
+		67CD29E42807130800493FA4 /* NetworkAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67CD29E32807130800493FA4 /* NetworkAgent.swift */; };
+		67D7AB312825060D0084A9C8 /* dateVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D7AB302825060C0084A9C8 /* dateVO.swift */; };
+		67DE5BDC27C7699F00367849 /* seatVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5BDB27C7699F00367849 /* seatVO.swift */; };
+		67DE5BDF27C76A6A00367849 /* SeatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5BDE27C76A6A00367849 /* SeatType.swift */; };
+		67DE5BE227C7718200367849 /* dummySeatDataList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5BE127C7718200367849 /* dummySeatDataList.swift */; };
+		67DE5BE427C78EEC00367849 /* SeatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5BE327C78EEC00367849 /* SeatViewController.swift */; };
+		67DE5BE727C79F4700367849 /* SeatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE5BE527C79F4700367849 /* SeatCollectionViewCell.swift */; };
+		67DE5BE827C79F4700367849 /* SeatCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67DE5BE627C79F4700367849 /* SeatCollectionViewCell.xib */; };
+		67DE91BC2894041B009B3C82 /* CheckOutValuesObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE91BB2894041B009B3C82 /* CheckOutValuesObject.swift */; };
+		67E3994628239CC300F5723E /* PayMethodsStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67E3994528239CC300F5723E /* PayMethodsStruct.swift */; };
+		67EC2BA42837447000F66CA6 /* CheckoutStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EC2BA32837447000F66CA6 /* CheckoutStruct.swift */; };
+		67EC2BA6283755E900F66CA6 /* snackVo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67EC2BA5283755E900F66CA6 /* snackVo.swift */; };
+		67F4CA3428116B5A00E464FE /* CurrentShowingStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F4CA3328116B5A00E464FE /* CurrentShowingStruct.swift */; };
+		67F7D32C283D0283001EA02B /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F7D32B283D0283001EA02B /* BaseModel.swift */; };
+		67F8385828407FE7007CD65F /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8385728407FE7007CD65F /* MovieModel.swift */; };
+		67F8385D28408264007CD65F /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F8385B28408264007CD65F /* GenreCollectionViewCell.swift */; };
+		67F8385E28408264007CD65F /* GenreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67F8385C28408264007CD65F /* GenreCollectionViewCell.xib */; };
+		67FC9AB32842122900BB3683 /* ActorObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FC9AB22842122900BB3683 /* ActorObject.swift */; };
+		67FE7C0F27C8AED000A13524 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67FE7C0E27C8AED000A13524 /* RatingControl.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67B22A50289D6C1900329D3F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6702E20627C35FCF005AF1E9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6702E20D27C35FCF005AF1E9;
+			remoteInfo = movieBookingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3202B0B2FD7323BC6BB52178 /* Pods-movieBookingAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movieBookingAppTests.debug.xcconfig"; path = "Target Support Files/Pods-movieBookingAppTests/Pods-movieBookingAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6701C88E28072C93008847E6 /* RegisterWithEmailStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWithEmailStruct.swift; sourceTree = "<group>"; };
+		670296D0289E19BC001A4390 /* SeatPlanViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatPlanViewModelTests.swift; sourceTree = "<group>"; };
+		670296D3289E1A2B001A4390 /* MockSeatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSeatModel.swift; sourceTree = "<group>"; };
+		6702E20E27C35FCF005AF1E9 /* movieBookingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movieBookingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6702E21127C35FCF005AF1E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6702E21327C35FCF005AF1E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6702E21527C35FCF005AF1E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6702E21827C35FCF005AF1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6702E21A27C35FD3005AF1E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6702E21D27C35FD3005AF1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6702E21F27C35FD3005AF1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6702E23027C36896005AF1E9 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		6702E23327C36EAF005AF1E9 /* extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
+		6702E23927C3D5D5005AF1E9 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		6702E23B27C3F270005AF1E9 /* PromoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromoViewController.swift; sourceTree = "<group>"; };
+		6702E23D27C3F4E0005AF1E9 /* CastCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastCollectionViewCell.swift; sourceTree = "<group>"; };
+		6702E23E27C3F4E0005AF1E9 /* CastCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastCollectionViewCell.xib; sourceTree = "<group>"; };
+		6702E24127C3FA4A005AF1E9 /* ComboTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComboTableViewCell.swift; sourceTree = "<group>"; };
+		6702E24227C3FA4A005AF1E9 /* ComboTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComboTableViewCell.xib; sourceTree = "<group>"; };
+		6702E24527C40509005AF1E9 /* paymethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paymethodTableViewCell.swift; sourceTree = "<group>"; };
+		6702E24627C4050A005AF1E9 /* paymethodTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = paymethodTableViewCell.xib; sourceTree = "<group>"; };
+		6702E24927C40AB5005AF1E9 /* enterPromoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enterPromoTableViewCell.swift; sourceTree = "<group>"; };
+		6702E24A27C40AB5005AF1E9 /* enterPromoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = enterPromoTableViewCell.xib; sourceTree = "<group>"; };
+		6704FDF52838D79F002FAB50 /* SideSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideSliderViewController.swift; sourceTree = "<group>"; };
+		6704FDF7283909F6002FAB50 /* payMethodVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payMethodVO.swift; sourceTree = "<group>"; };
+		67079606280717B000555588 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		670796082807180700555588 /* constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		6716CAC82841E3CE00F91C17 /* ContentTypeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentTypeRepository.swift; sourceTree = "<group>"; };
+		6716CACA2841E4E600F91C17 /* BelongToTypeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelongToTypeObject.swift; sourceTree = "<group>"; };
+		6716CACC2841E72400F91C17 /* BelongToCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BelongToCollection.swift; sourceTree = "<group>"; };
+		671E9C60282CD50D007F6C65 /* checkoutVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = checkoutVO.swift; sourceTree = "<group>"; };
+		672025AB27C7E2D2002C417E /* CardCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCollectionViewCell.swift; sourceTree = "<group>"; };
+		672025AC27C7E2D2002C417E /* CardCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCollectionViewCell.xib; sourceTree = "<group>"; };
+		67229984281282B500A5F0B4 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		6727661E2840B580008909E6 /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
+		6727B65027CD2C5200EB5553 /* firstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstTableViewCell.swift; sourceTree = "<group>"; };
+		6727B65127CD2C5200EB5553 /* firstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = firstTableViewCell.xib; sourceTree = "<group>"; };
+		6738D65109DE7AB415E8AE18 /* Pods-movieBookingApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movieBookingApp.debug.xcconfig"; path = "Target Support Files/Pods-movieBookingApp/Pods-movieBookingApp.debug.xcconfig"; sourceTree = "<group>"; };
+		673C1E7D28240D3200B97ED3 /* SeatStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatStruct.swift; sourceTree = "<group>"; };
+		673C1E7F28242E2500B97ED3 /* CardCreateStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCreateStruct.swift; sourceTree = "<group>"; };
+		67407A862841CD43007CF3B1 /* movieObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieObject.swift; sourceTree = "<group>"; };
+		67407A882841CEF8007CF3B1 /* movieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieRepository.swift; sourceTree = "<group>"; };
+		67407A8A2841D16D007CF3B1 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		6741C07527C42C2500301F82 /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
+		67473BF827C4BC3C00A1A93E /* secondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTableViewCell.swift; sourceTree = "<group>"; };
+		67473BF927C4BC3C00A1A93E /* secondTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = secondTableViewCell.xib; sourceTree = "<group>"; };
+		67473BFC27C4C09B00A1A93E /* payBtnTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = payBtnTableViewCell.swift; sourceTree = "<group>"; };
+		67473BFD27C4C09B00A1A93E /* payBtnTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = payBtnTableViewCell.xib; sourceTree = "<group>"; };
+		67473C0027C4C42300A1A93E /* ChooseCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseCardViewController.swift; sourceTree = "<group>"; };
+		67473C0327C4C58100A1A93E /* PayButtonDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayButtonDelegate.swift; sourceTree = "<group>"; };
+		67473C0527C4CA0800A1A93E /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		674989B12849ADAC003FF5D0 /* SnackObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackObject.swift; sourceTree = "<group>"; };
+		674989B32849AEF1003FF5D0 /* SnackRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackRepository.swift; sourceTree = "<group>"; };
+		674989B52849B015003FF5D0 /* SnackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackModel.swift; sourceTree = "<group>"; };
+		674989B72849B26A003FF5D0 /* SeatObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatObject.swift; sourceTree = "<group>"; };
+		674989B92849B9F8003FF5D0 /* SeatPlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatPlanModel.swift; sourceTree = "<group>"; };
+		674989BB2849BE7F003FF5D0 /* SeatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatRepository.swift; sourceTree = "<group>"; };
+		674BCF8F28218E8A009DF7CD /* TimeSlotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotCollectionViewCell.swift; sourceTree = "<group>"; };
+		674BCF9028218E8A009DF7CD /* TimeSlotCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeSlotCollectionViewCell.xib; sourceTree = "<group>"; };
+		674BCF9328219015009DF7CD /* CinemaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaCollectionViewCell.swift; sourceTree = "<group>"; };
+		674BCF9428219015009DF7CD /* CinemaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CinemaCollectionViewCell.xib; sourceTree = "<group>"; };
+		674ED69E2820DFC000EBCA78 /* CinemaListStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaListStruct.swift; sourceTree = "<group>"; };
+		674ED6A0282101BE00EBCA78 /* SnackStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackStruct.swift; sourceTree = "<group>"; };
+		674ED6A2282104E400EBCA78 /* CinemaTimeSlotStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTimeSlotStruct.swift; sourceTree = "<group>"; };
+		6755283B282569E40048D83C /* timeSlotVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timeSlotVO.swift; sourceTree = "<group>"; };
+		6755ECBC2812B46100FF5D1D /* MovieDetailStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailStruct.swift; sourceTree = "<group>"; };
+		676FC37E27C60A5F0095D47C /* AddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCardViewController.swift; sourceTree = "<group>"; };
+		67B22A46289D517800329D3F /* SeatPlanPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatPlanPresenter.swift; sourceTree = "<group>"; };
+		67B22A4C289D6C1900329D3F /* movieBookingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = movieBookingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B22A4E289D6C1900329D3F /* movieBookingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieBookingAppTests.swift; sourceTree = "<group>"; };
+		67B22A58289D746700329D3F /* validResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = validResponse.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		67B22A59289D74FD00329D3F /* invalidAuthentication.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = invalidAuthentication.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		67B22A5B289D797F00329D3F /* MockDataURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataURL.swift; sourceTree = "<group>"; };
+		67B22A5D289D7B0600329D3F /* NetworkAgentTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAgentTest.swift; sourceTree = "<group>"; };
+		67BB5EB7289B778B0042C9A2 /* SeatPlanViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatPlanViewModel.swift; sourceTree = "<group>"; };
+		67BB5EB9289B7A330042C9A2 /* RxSeatPlanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSeatPlanModel.swift; sourceTree = "<group>"; };
+		67BBFE7C27C6750C008AC163 /* ChooseDateTimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDateTimeViewController.swift; sourceTree = "<group>"; };
+		67BBFE7E27C683F0008AC163 /* cvACollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cvACollectionViewCell.swift; sourceTree = "<group>"; };
+		67BBFE7F27C683F0008AC163 /* cvACollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cvACollectionViewCell.xib; sourceTree = "<group>"; };
+		67BBFE8227C68403008AC163 /* cvBCDCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cvBCDCollectionViewCell.swift; sourceTree = "<group>"; };
+		67BBFE8327C68403008AC163 /* cvBCDCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cvBCDCollectionViewCell.xib; sourceTree = "<group>"; };
+		67BBFE8827C69CDB008AC163 /* movieSliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieSliderCollectionViewCell.swift; sourceTree = "<group>"; };
+		67BBFE8927C69CDB008AC163 /* movieSliderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = movieSliderCollectionViewCell.xib; sourceTree = "<group>"; };
+		67CABD0E2848FF4A008CCF6A /* CinemaTimeSlotObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CinemaTimeSlotObject.swift; sourceTree = "<group>"; };
+		67CABD1028490000008CCF6A /* TimeSlotObject .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeSlotObject .swift"; sourceTree = "<group>"; };
+		67CABD122849010D008CCF6A /* repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repository.swift; sourceTree = "<group>"; };
+		67CABD14284902E2008CCF6A /* TimeSlotModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotModel.swift; sourceTree = "<group>"; };
+		67CD29DE2807121700493FA4 /* LoginWithEmailStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailStruct.swift; sourceTree = "<group>"; };
+		67CD29E0280712C000493FA4 /* structHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = structHelpers.swift; sourceTree = "<group>"; };
+		67CD29E32807130800493FA4 /* NetworkAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAgent.swift; sourceTree = "<group>"; };
+		67D7AB302825060C0084A9C8 /* dateVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dateVO.swift; sourceTree = "<group>"; };
+		67DE5BDB27C7699F00367849 /* seatVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = seatVO.swift; sourceTree = "<group>"; };
+		67DE5BDE27C76A6A00367849 /* SeatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatType.swift; sourceTree = "<group>"; };
+		67DE5BE127C7718200367849 /* dummySeatDataList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dummySeatDataList.swift; sourceTree = "<group>"; };
+		67DE5BE327C78EEC00367849 /* SeatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatViewController.swift; sourceTree = "<group>"; };
+		67DE5BE527C79F4700367849 /* SeatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatCollectionViewCell.swift; sourceTree = "<group>"; };
+		67DE5BE627C79F4700367849 /* SeatCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SeatCollectionViewCell.xib; sourceTree = "<group>"; };
+		67DE91BB2894041B009B3C82 /* CheckOutValuesObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckOutValuesObject.swift; sourceTree = "<group>"; };
+		67E3994528239CC300F5723E /* PayMethodsStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMethodsStruct.swift; sourceTree = "<group>"; };
+		67EC2BA32837447000F66CA6 /* CheckoutStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutStruct.swift; sourceTree = "<group>"; };
+		67EC2BA5283755E900F66CA6 /* snackVo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snackVo.swift; sourceTree = "<group>"; };
+		67F4CA3328116B5A00E464FE /* CurrentShowingStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentShowingStruct.swift; sourceTree = "<group>"; };
+		67F7D32B283D0283001EA02B /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		67F8385728407FE7007CD65F /* MovieModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
+		67F8385B28408264007CD65F /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		67F8385C28408264007CD65F /* GenreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreCollectionViewCell.xib; sourceTree = "<group>"; };
+		67FC9AB22842122900BB3683 /* ActorObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorObject.swift; sourceTree = "<group>"; };
+		67FE7C0E27C8AED000A13524 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		7DB23AB0C46FF26C1A7347AD /* Pods_movieBookingApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movieBookingApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81187803D74D125B71458A63 /* Pods-movieBookingApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movieBookingApp.release.xcconfig"; path = "Target Support Files/Pods-movieBookingApp/Pods-movieBookingApp.release.xcconfig"; sourceTree = "<group>"; };
+		98F29DFF4D2180575BC03C10 /* Pods_movieBookingAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_movieBookingAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C020ADDF8CB8E947D43E6A93 /* Pods-movieBookingAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-movieBookingAppTests.release.xcconfig"; path = "Target Support Files/Pods-movieBookingAppTests/Pods-movieBookingAppTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6702E20B27C35FCF005AF1E9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D9966390C66EF1860549F8A /* Pods_movieBookingApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B22A49289D6C1900329D3F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2192552019CF2EB6B5F94ACB /* Pods_movieBookingAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		670296D2289E1A0C001A4390 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				670296D3289E1A2B001A4390 /* MockSeatModel.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6702E20527C35FCF005AF1E9 = {
+			isa = PBXGroup;
+			children = (
+				6702E21027C35FCF005AF1E9 /* movieBookingApp */,
+				67B22A4D289D6C1900329D3F /* movieBookingAppTests */,
+				6702E20F27C35FCF005AF1E9 /* Products */,
+				BDB26F9AE78BA5DF9013D0A0 /* Pods */,
+				E36C16A5308E25A5F5601E82 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6702E20F27C35FCF005AF1E9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6702E20E27C35FCF005AF1E9 /* movieBookingApp.app */,
+				67B22A4C289D6C1900329D3F /* movieBookingAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6702E21027C35FCF005AF1E9 /* movieBookingApp */ = {
+			isa = PBXGroup;
+			children = (
+				67B22A45289D516200329D3F /* Presenter */,
+				67BB5EB6289B77780042C9A2 /* ViewModel */,
+				67407A812841CCBF007CF3B1 /* RealmDataBase */,
+				6719084B283CB1330055B892 /* Models */,
+				67CD29E2280712F200493FA4 /* Networking */,
+				67CD29DD280711DF00493FA4 /* VOs */,
+				67FE7C0D27C8AEA700A13524 /* components */,
+				67DE5BE027C7713900367849 /* dummyData */,
+				67DE5BDD27C76A5500367849 /* utils */,
+				67DE5BD927C7694E00367849 /* data */,
+				6702E23227C36E92005AF1E9 /* extensions */,
+				6702E22927C36075005AF1E9 /* cells */,
+				6702E22827C36066005AF1E9 /* resources */,
+				6702E22727C36035005AF1E9 /* storyBoards */,
+				6702E22627C3601D005AF1E9 /* delegates */,
+				6702E22527C35FFC005AF1E9 /* viewControllers */,
+				6702E21F27C35FD3005AF1E9 /* Info.plist */,
+			);
+			path = movieBookingApp;
+			sourceTree = "<group>";
+		};
+		6702E22527C35FFC005AF1E9 /* viewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6702E21527C35FCF005AF1E9 /* ViewController.swift */,
+				6702E23027C36896005AF1E9 /* LogInViewController.swift */,
+				6741C07527C42C2500301F82 /* MainScreenViewController.swift */,
+				6702E23927C3D5D5005AF1E9 /* MovieViewController.swift */,
+				67BBFE7C27C6750C008AC163 /* ChooseDateTimeViewController.swift */,
+				67DE5BE327C78EEC00367849 /* SeatViewController.swift */,
+				6702E23B27C3F270005AF1E9 /* PromoViewController.swift */,
+				67473C0027C4C42300A1A93E /* ChooseCardViewController.swift */,
+				676FC37E27C60A5F0095D47C /* AddCardViewController.swift */,
+				67473C0527C4CA0800A1A93E /* TicketViewController.swift */,
+				6704FDF52838D79F002FAB50 /* SideSliderViewController.swift */,
+			);
+			path = viewControllers;
+			sourceTree = "<group>";
+		};
+		6702E22627C3601D005AF1E9 /* delegates */ = {
+			isa = PBXGroup;
+			children = (
+				67473C0227C4C57300A1A93E /* protocols */,
+				6702E21127C35FCF005AF1E9 /* AppDelegate.swift */,
+				6702E21327C35FCF005AF1E9 /* SceneDelegate.swift */,
+			);
+			path = delegates;
+			sourceTree = "<group>";
+		};
+		6702E22727C36035005AF1E9 /* storyBoards */ = {
+			isa = PBXGroup;
+			children = (
+				6702E21727C35FCF005AF1E9 /* Main.storyboard */,
+				6702E21C27C35FD3005AF1E9 /* LaunchScreen.storyboard */,
+			);
+			path = storyBoards;
+			sourceTree = "<group>";
+		};
+		6702E22827C36066005AF1E9 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				6702E21A27C35FD3005AF1E9 /* Assets.xcassets */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		6702E22927C36075005AF1E9 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				6702E22B27C36085005AF1E9 /* collectionViewCells */,
+				6702E22A27C3607C005AF1E9 /* tableViewCells */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		6702E22A27C3607C005AF1E9 /* tableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6702E22D27C3609F005AF1E9 /* xibs */,
+				6702E22C27C36096005AF1E9 /* swifts */,
+			);
+			path = tableViewCells;
+			sourceTree = "<group>";
+		};
+		6702E22B27C36085005AF1E9 /* collectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6702E22F27C360B1005AF1E9 /* xibs */,
+				6702E22E27C360A9005AF1E9 /* swifts */,
+			);
+			path = collectionViewCells;
+			sourceTree = "<group>";
+		};
+		6702E22C27C36096005AF1E9 /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				6727B65027CD2C5200EB5553 /* firstTableViewCell.swift */,
+				67473BFC27C4C09B00A1A93E /* payBtnTableViewCell.swift */,
+				67473BF827C4BC3C00A1A93E /* secondTableViewCell.swift */,
+				6702E24927C40AB5005AF1E9 /* enterPromoTableViewCell.swift */,
+				6702E24527C40509005AF1E9 /* paymethodTableViewCell.swift */,
+				6702E24127C3FA4A005AF1E9 /* ComboTableViewCell.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		6702E22D27C3609F005AF1E9 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				67473BFD27C4C09B00A1A93E /* payBtnTableViewCell.xib */,
+				67473BF927C4BC3C00A1A93E /* secondTableViewCell.xib */,
+				6727B65127CD2C5200EB5553 /* firstTableViewCell.xib */,
+				6702E24A27C40AB5005AF1E9 /* enterPromoTableViewCell.xib */,
+				6702E24627C4050A005AF1E9 /* paymethodTableViewCell.xib */,
+				6702E24227C3FA4A005AF1E9 /* ComboTableViewCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		6702E22E27C360A9005AF1E9 /* swifts */ = {
+			isa = PBXGroup;
+			children = (
+				67F8385B28408264007CD65F /* GenreCollectionViewCell.swift */,
+				672025AB27C7E2D2002C417E /* CardCollectionViewCell.swift */,
+				67DE5BE527C79F4700367849 /* SeatCollectionViewCell.swift */,
+				67BBFE8827C69CDB008AC163 /* movieSliderCollectionViewCell.swift */,
+				67BBFE8227C68403008AC163 /* cvBCDCollectionViewCell.swift */,
+				67BBFE7E27C683F0008AC163 /* cvACollectionViewCell.swift */,
+				6702E23D27C3F4E0005AF1E9 /* CastCollectionViewCell.swift */,
+				674BCF8F28218E8A009DF7CD /* TimeSlotCollectionViewCell.swift */,
+				674BCF9328219015009DF7CD /* CinemaCollectionViewCell.swift */,
+			);
+			path = swifts;
+			sourceTree = "<group>";
+		};
+		6702E22F27C360B1005AF1E9 /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+				67F8385C28408264007CD65F /* GenreCollectionViewCell.xib */,
+				674BCF9428219015009DF7CD /* CinemaCollectionViewCell.xib */,
+				674BCF9028218E8A009DF7CD /* TimeSlotCollectionViewCell.xib */,
+				672025AC27C7E2D2002C417E /* CardCollectionViewCell.xib */,
+				67DE5BE627C79F4700367849 /* SeatCollectionViewCell.xib */,
+				67BBFE8927C69CDB008AC163 /* movieSliderCollectionViewCell.xib */,
+				67BBFE8327C68403008AC163 /* cvBCDCollectionViewCell.xib */,
+				67BBFE7F27C683F0008AC163 /* cvACollectionViewCell.xib */,
+				6702E23E27C3F4E0005AF1E9 /* CastCollectionViewCell.xib */,
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		6702E23227C36E92005AF1E9 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6702E23327C36EAF005AF1E9 /* extensions.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		6719084B283CB1330055B892 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				67F7D32B283D0283001EA02B /* BaseModel.swift */,
+				67F8385728407FE7007CD65F /* MovieModel.swift */,
+				67CABD14284902E2008CCF6A /* TimeSlotModel.swift */,
+				674989B52849B015003FF5D0 /* SnackModel.swift */,
+				674989B92849B9F8003FF5D0 /* SeatPlanModel.swift */,
+				67BB5EB9289B7A330042C9A2 /* RxSeatPlanModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		672299832812829D00A5F0B4 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				67229984281282B500A5F0B4 /* UserDefaults.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		67407A812841CCBF007CF3B1 /* RealmDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				67407A852841CD24007CF3B1 /* Repositories */,
+				67407A842841CD19007CF3B1 /* Objects */,
+			);
+			path = RealmDataBase;
+			sourceTree = "<group>";
+		};
+		67407A842841CD19007CF3B1 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				6716CACC2841E72400F91C17 /* BelongToCollection.swift */,
+				67407A862841CD43007CF3B1 /* movieObject.swift */,
+				6716CACA2841E4E600F91C17 /* BelongToTypeObject.swift */,
+				67FC9AB22842122900BB3683 /* ActorObject.swift */,
+				67CABD0E2848FF4A008CCF6A /* CinemaTimeSlotObject.swift */,
+				67CABD1028490000008CCF6A /* TimeSlotObject .swift */,
+				674989B12849ADAC003FF5D0 /* SnackObject.swift */,
+				674989B72849B26A003FF5D0 /* SeatObject.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		67407A852841CD24007CF3B1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				67407A882841CEF8007CF3B1 /* movieRepository.swift */,
+				67407A8A2841D16D007CF3B1 /* BaseRepository.swift */,
+				6716CAC82841E3CE00F91C17 /* ContentTypeRepository.swift */,
+				67CABD122849010D008CCF6A /* repository.swift */,
+				674989B32849AEF1003FF5D0 /* SnackRepository.swift */,
+				674989BB2849BE7F003FF5D0 /* SeatRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		67473C0227C4C57300A1A93E /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				67473C0327C4C58100A1A93E /* PayButtonDelegate.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		67B22A45289D516200329D3F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				67B22A46289D517800329D3F /* SeatPlanPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		67B22A4D289D6C1900329D3F /* movieBookingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				670296D2289E1A0C001A4390 /* Network */,
+				67B22A5A289D794D00329D3F /* Mock */,
+				67B22A57289D744400329D3F /* json */,
+				67B22A4E289D6C1900329D3F /* movieBookingAppTests.swift */,
+				67B22A5D289D7B0600329D3F /* NetworkAgentTest.swift */,
+				670296D0289E19BC001A4390 /* SeatPlanViewModelTests.swift */,
+			);
+			path = movieBookingAppTests;
+			sourceTree = "<group>";
+		};
+		67B22A57289D744400329D3F /* json */ = {
+			isa = PBXGroup;
+			children = (
+				67B22A58289D746700329D3F /* validResponse.json */,
+				67B22A59289D74FD00329D3F /* invalidAuthentication.json */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		67B22A5A289D794D00329D3F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				67B22A5B289D797F00329D3F /* MockDataURL.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		67BB5EB6289B77780042C9A2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				67BB5EB7289B778B0042C9A2 /* SeatPlanViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		67CD29DD280711DF00493FA4 /* VOs */ = {
+			isa = PBXGroup;
+			children = (
+				672299832812829D00A5F0B4 /* UserDefault */,
+				67CD29DE2807121700493FA4 /* LoginWithEmailStruct.swift */,
+				67CD29E0280712C000493FA4 /* structHelpers.swift */,
+				6701C88E28072C93008847E6 /* RegisterWithEmailStruct.swift */,
+				67F4CA3328116B5A00E464FE /* CurrentShowingStruct.swift */,
+				6755ECBC2812B46100FF5D1D /* MovieDetailStruct.swift */,
+				674ED69E2820DFC000EBCA78 /* CinemaListStruct.swift */,
+				674ED6A2282104E400EBCA78 /* CinemaTimeSlotStruct.swift */,
+				674ED6A0282101BE00EBCA78 /* SnackStruct.swift */,
+				67E3994528239CC300F5723E /* PayMethodsStruct.swift */,
+				673C1E7D28240D3200B97ED3 /* SeatStruct.swift */,
+				673C1E7F28242E2500B97ED3 /* CardCreateStruct.swift */,
+				67EC2BA32837447000F66CA6 /* CheckoutStruct.swift */,
+				67DE91BB2894041B009B3C82 /* CheckOutValuesObject.swift */,
+			);
+			path = VOs;
+			sourceTree = "<group>";
+		};
+		67CD29E2280712F200493FA4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				67CD29E32807130800493FA4 /* NetworkAgent.swift */,
+				67079606280717B000555588 /* EndPoints.swift */,
+				670796082807180700555588 /* constants.swift */,
+				6727661E2840B580008909E6 /* GoogleAuth.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		67DE5BD927C7694E00367849 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				67DE5BDA27C7695F00367849 /* vos */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		67DE5BDA27C7695F00367849 /* vos */ = {
+			isa = PBXGroup;
+			children = (
+				67DE5BDB27C7699F00367849 /* seatVO.swift */,
+				67D7AB302825060C0084A9C8 /* dateVO.swift */,
+				6755283B282569E40048D83C /* timeSlotVO.swift */,
+				671E9C60282CD50D007F6C65 /* checkoutVO.swift */,
+				67EC2BA5283755E900F66CA6 /* snackVo.swift */,
+				6704FDF7283909F6002FAB50 /* payMethodVO.swift */,
+			);
+			path = vos;
+			sourceTree = "<group>";
+		};
+		67DE5BDD27C76A5500367849 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				67DE5BDE27C76A6A00367849 /* SeatType.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		67DE5BE027C7713900367849 /* dummyData */ = {
+			isa = PBXGroup;
+			children = (
+				67DE5BE127C7718200367849 /* dummySeatDataList.swift */,
+			);
+			path = dummyData;
+			sourceTree = "<group>";
+		};
+		67FE7C0D27C8AEA700A13524 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				67FE7C0E27C8AED000A13524 /* RatingControl.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		BDB26F9AE78BA5DF9013D0A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6738D65109DE7AB415E8AE18 /* Pods-movieBookingApp.debug.xcconfig */,
+				81187803D74D125B71458A63 /* Pods-movieBookingApp.release.xcconfig */,
+				3202B0B2FD7323BC6BB52178 /* Pods-movieBookingAppTests.debug.xcconfig */,
+				C020ADDF8CB8E947D43E6A93 /* Pods-movieBookingAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E36C16A5308E25A5F5601E82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DB23AB0C46FF26C1A7347AD /* Pods_movieBookingApp.framework */,
+				98F29DFF4D2180575BC03C10 /* Pods_movieBookingAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6702E20D27C35FCF005AF1E9 /* movieBookingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6702E22227C35FD3005AF1E9 /* Build configuration list for PBXNativeTarget "movieBookingApp" */;
+			buildPhases = (
+				855C7DA68109FFBA08B84ADF /* [CP] Check Pods Manifest.lock */,
+				6702E20A27C35FCF005AF1E9 /* Sources */,
+				6702E20B27C35FCF005AF1E9 /* Frameworks */,
+				6702E20C27C35FCF005AF1E9 /* Resources */,
+				A680526ACCAFF8E8E654794D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = movieBookingApp;
+			productName = movieBookingApp;
+			productReference = 6702E20E27C35FCF005AF1E9 /* movieBookingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		67B22A4B289D6C1900329D3F /* movieBookingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67B22A52289D6C1900329D3F /* Build configuration list for PBXNativeTarget "movieBookingAppTests" */;
+			buildPhases = (
+				9D177C8A5891D4C097FFBD00 /* [CP] Check Pods Manifest.lock */,
+				67B22A48289D6C1900329D3F /* Sources */,
+				67B22A49289D6C1900329D3F /* Frameworks */,
+				67B22A4A289D6C1900329D3F /* Resources */,
+				50024D44562EBD53A9DA22B8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67B22A51289D6C1900329D3F /* PBXTargetDependency */,
+			);
+			name = movieBookingAppTests;
+			productName = movieBookingAppTests;
+			productReference = 67B22A4C289D6C1900329D3F /* movieBookingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6702E20627C35FCF005AF1E9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6702E20D27C35FCF005AF1E9 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					67B22A4B289D6C1900329D3F = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 6702E20D27C35FCF005AF1E9;
+					};
+				};
+			};
+			buildConfigurationList = 6702E20927C35FCF005AF1E9 /* Build configuration list for PBXProject "movieBookingApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6702E20527C35FCF005AF1E9;
+			productRefGroup = 6702E20F27C35FCF005AF1E9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6702E20D27C35FCF005AF1E9 /* movieBookingApp */,
+				67B22A4B289D6C1900329D3F /* movieBookingAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6702E20C27C35FCF005AF1E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6702E24C27C40AB6005AF1E9 /* enterPromoTableViewCell.xib in Resources */,
+				672025AE27C7E2D2002C417E /* CardCollectionViewCell.xib in Resources */,
+				67DE5BE827C79F4700367849 /* SeatCollectionViewCell.xib in Resources */,
+				67BBFE8527C68403008AC163 /* cvBCDCollectionViewCell.xib in Resources */,
+				6702E21E27C35FD3005AF1E9 /* LaunchScreen.storyboard in Resources */,
+				67473BFB27C4BC3C00A1A93E /* secondTableViewCell.xib in Resources */,
+				67473BFF27C4C09B00A1A93E /* payBtnTableViewCell.xib in Resources */,
+				674BCF9228218E8A009DF7CD /* TimeSlotCollectionViewCell.xib in Resources */,
+				67BBFE8127C683F0008AC163 /* cvACollectionViewCell.xib in Resources */,
+				6702E24027C3F4E0005AF1E9 /* CastCollectionViewCell.xib in Resources */,
+				6702E21B27C35FD3005AF1E9 /* Assets.xcassets in Resources */,
+				6702E24827C4050A005AF1E9 /* paymethodTableViewCell.xib in Resources */,
+				67BBFE8B27C69CDB008AC163 /* movieSliderCollectionViewCell.xib in Resources */,
+				6702E21927C35FCF005AF1E9 /* Main.storyboard in Resources */,
+				6702E24427C3FA4A005AF1E9 /* ComboTableViewCell.xib in Resources */,
+				674BCF9628219015009DF7CD /* CinemaCollectionViewCell.xib in Resources */,
+				67F8385E28408264007CD65F /* GenreCollectionViewCell.xib in Resources */,
+				6727B65327CD2C5200EB5553 /* firstTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B22A4A289D6C1900329D3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B22A5F289D7FFE00329D3F /* validResponse.json in Resources */,
+				6780206428A134A200783141 /* invalidAuthentication.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50024D44562EBD53A9DA22B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-movieBookingAppTests/Pods-movieBookingAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-movieBookingAppTests/Pods-movieBookingAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-movieBookingAppTests/Pods-movieBookingAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		855C7DA68109FFBA08B84ADF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-movieBookingApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D177C8A5891D4C097FFBD00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-movieBookingAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A680526ACCAFF8E8E654794D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-movieBookingApp/Pods-movieBookingApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-movieBookingApp/Pods-movieBookingApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-movieBookingApp/Pods-movieBookingApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6702E20A27C35FCF005AF1E9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67CABD15284902E2008CCF6A /* TimeSlotModel.swift in Sources */,
+				67DE5BE427C78EEC00367849 /* SeatViewController.swift in Sources */,
+				673C1E7E28240D3200B97ED3 /* SeatStruct.swift in Sources */,
+				67407A872841CD43007CF3B1 /* movieObject.swift in Sources */,
+				6702E23427C36EAF005AF1E9 /* extensions.swift in Sources */,
+				6702E23F27C3F4E0005AF1E9 /* CastCollectionViewCell.swift in Sources */,
+				670796092807180700555588 /* constants.swift in Sources */,
+				67BBFE8027C683F0008AC163 /* cvACollectionViewCell.swift in Sources */,
+				67D7AB312825060D0084A9C8 /* dateVO.swift in Sources */,
+				67BB5EB8289B778B0042C9A2 /* SeatPlanViewModel.swift in Sources */,
+				674989BC2849BE7F003FF5D0 /* SeatRepository.swift in Sources */,
+				674BCF9528219015009DF7CD /* CinemaCollectionViewCell.swift in Sources */,
+				6755ECBD2812B46100FF5D1D /* MovieDetailStruct.swift in Sources */,
+				674ED6A1282101BE00EBCA78 /* SnackStruct.swift in Sources */,
+				6702E24B27C40AB6005AF1E9 /* enterPromoTableViewCell.swift in Sources */,
+				67CD29E42807130800493FA4 /* NetworkAgent.swift in Sources */,
+				67473C0127C4C42400A1A93E /* ChooseCardViewController.swift in Sources */,
+				674989B42849AEF1003FF5D0 /* SnackRepository.swift in Sources */,
+				6702E23127C36896005AF1E9 /* LogInViewController.swift in Sources */,
+				6702E21627C35FCF005AF1E9 /* ViewController.swift in Sources */,
+				67DE5BDF27C76A6A00367849 /* SeatType.swift in Sources */,
+				67079607280717B000555588 /* EndPoints.swift in Sources */,
+				674989B62849B015003FF5D0 /* SnackModel.swift in Sources */,
+				67473BFA27C4BC3C00A1A93E /* secondTableViewCell.swift in Sources */,
+				67FC9AB32842122900BB3683 /* ActorObject.swift in Sources */,
+				6716CAC92841E3CE00F91C17 /* ContentTypeRepository.swift in Sources */,
+				67CABD0F2848FF4A008CCF6A /* CinemaTimeSlotObject.swift in Sources */,
+				67BBFE8A27C69CDB008AC163 /* movieSliderCollectionViewCell.swift in Sources */,
+				674989B82849B26A003FF5D0 /* SeatObject.swift in Sources */,
+				674ED69F2820DFC000EBCA78 /* CinemaListStruct.swift in Sources */,
+				6741C07627C42C2500301F82 /* MainScreenViewController.swift in Sources */,
+				67BB5EBA289B7A330042C9A2 /* RxSeatPlanModel.swift in Sources */,
+				67BBFE8427C68403008AC163 /* cvBCDCollectionViewCell.swift in Sources */,
+				67473C0627C4CA0900A1A93E /* TicketViewController.swift in Sources */,
+				6716CACD2841E72400F91C17 /* BelongToCollection.swift in Sources */,
+				6702E23C27C3F270005AF1E9 /* PromoViewController.swift in Sources */,
+				67407A8B2841D16E007CF3B1 /* BaseRepository.swift in Sources */,
+				67F7D32C283D0283001EA02B /* BaseModel.swift in Sources */,
+				67DE5BE727C79F4700367849 /* SeatCollectionViewCell.swift in Sources */,
+				67E3994628239CC300F5723E /* PayMethodsStruct.swift in Sources */,
+				674BCF9128218E8A009DF7CD /* TimeSlotCollectionViewCell.swift in Sources */,
+				67F8385828407FE7007CD65F /* MovieModel.swift in Sources */,
+				674ED6A3282104E400EBCA78 /* CinemaTimeSlotStruct.swift in Sources */,
+				676FC37F27C60A5F0095D47C /* AddCardViewController.swift in Sources */,
+				67F8385D28408264007CD65F /* GenreCollectionViewCell.swift in Sources */,
+				67B22A47289D517800329D3F /* SeatPlanPresenter.swift in Sources */,
+				67EC2BA6283755E900F66CA6 /* snackVo.swift in Sources */,
+				6755283C282569E40048D83C /* timeSlotVO.swift in Sources */,
+				67473BFE27C4C09B00A1A93E /* payBtnTableViewCell.swift in Sources */,
+				674989BA2849B9F8003FF5D0 /* SeatPlanModel.swift in Sources */,
+				67CABD1128490000008CCF6A /* TimeSlotObject .swift in Sources */,
+				6704FDF62838D79F002FAB50 /* SideSliderViewController.swift in Sources */,
+				6702E24727C4050A005AF1E9 /* paymethodTableViewCell.swift in Sources */,
+				6701C88F28072C93008847E6 /* RegisterWithEmailStruct.swift in Sources */,
+				672025AD27C7E2D2002C417E /* CardCollectionViewCell.swift in Sources */,
+				67407A892841CEF9007CF3B1 /* movieRepository.swift in Sources */,
+				6716CACB2841E4E600F91C17 /* BelongToTypeObject.swift in Sources */,
+				6704FDF8283909F6002FAB50 /* payMethodVO.swift in Sources */,
+				6727661F2840B580008909E6 /* GoogleAuth.swift in Sources */,
+				673C1E8028242E2500B97ED3 /* CardCreateStruct.swift in Sources */,
+				67CD29DF2807121700493FA4 /* LoginWithEmailStruct.swift in Sources */,
+				67DE91BC2894041B009B3C82 /* CheckOutValuesObject.swift in Sources */,
+				6727B65227CD2C5200EB5553 /* firstTableViewCell.swift in Sources */,
+				67DE5BE227C7718200367849 /* dummySeatDataList.swift in Sources */,
+				67473C0427C4C58100A1A93E /* PayButtonDelegate.swift in Sources */,
+				67DE5BDC27C7699F00367849 /* seatVO.swift in Sources */,
+				67F4CA3428116B5A00E464FE /* CurrentShowingStruct.swift in Sources */,
+				6702E21227C35FCF005AF1E9 /* AppDelegate.swift in Sources */,
+				67EC2BA42837447000F66CA6 /* CheckoutStruct.swift in Sources */,
+				6702E21427C35FCF005AF1E9 /* SceneDelegate.swift in Sources */,
+				67229985281282B600A5F0B4 /* UserDefaults.swift in Sources */,
+				6702E23A27C3D5D5005AF1E9 /* MovieViewController.swift in Sources */,
+				674989B22849ADAC003FF5D0 /* SnackObject.swift in Sources */,
+				67BBFE7D27C6750C008AC163 /* ChooseDateTimeViewController.swift in Sources */,
+				671E9C61282CD50D007F6C65 /* checkoutVO.swift in Sources */,
+				67CD29E1280712C000493FA4 /* structHelpers.swift in Sources */,
+				67FE7C0F27C8AED000A13524 /* RatingControl.swift in Sources */,
+				6702E24327C3FA4A005AF1E9 /* ComboTableViewCell.swift in Sources */,
+				67CABD132849010D008CCF6A /* repository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67B22A48289D6C1900329D3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67B22A4F289D6C1900329D3F /* movieBookingAppTests.swift in Sources */,
+				67B22A5C289D797F00329D3F /* MockDataURL.swift in Sources */,
+				670296D1289E19BC001A4390 /* SeatPlanViewModelTests.swift in Sources */,
+				67B22A5E289D7B0600329D3F /* NetworkAgentTest.swift in Sources */,
+				670296D4289E1A2B001A4390 /* MockSeatModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67B22A51289D6C1900329D3F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6702E20D27C35FCF005AF1E9 /* movieBookingApp */;
+			targetProxy = 67B22A50289D6C1900329D3F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6702E21727C35FCF005AF1E9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6702E21827C35FCF005AF1E9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6702E21C27C35FD3005AF1E9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6702E21D27C35FD3005AF1E9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6702E22027C35FD3005AF1E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6702E22127C35FD3005AF1E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6702E22327C35FD3005AF1E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6738D65109DE7AB415E8AE18 /* Pods-movieBookingApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V8N58NWMY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = movieBookingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.pcent.movieBookingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6702E22427C35FD3005AF1E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81187803D74D125B71458A63 /* Pods-movieBookingApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V8N58NWMY2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = movieBookingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = co.pcent.movieBookingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		67B22A53289D6C1900329D3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3202B0B2FD7323BC6BB52178 /* Pods-movieBookingAppTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pcent.movieBookingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/movieBookingApp.app/movieBookingApp";
+			};
+			name = Debug;
+		};
+		67B22A54289D6C1900329D3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C020ADDF8CB8E947D43E6A93 /* Pods-movieBookingAppTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pcent.movieBookingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/movieBookingApp.app/movieBookingApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6702E20927C35FCF005AF1E9 /* Build configuration list for PBXProject "movieBookingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6702E22027C35FD3005AF1E9 /* Debug */,
+				6702E22127C35FD3005AF1E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6702E22227C35FD3005AF1E9 /* Build configuration list for PBXNativeTarget "movieBookingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6702E22327C35FD3005AF1E9 /* Debug */,
+				6702E22427C35FD3005AF1E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67B22A52289D6C1900329D3F /* Build configuration list for PBXNativeTarget "movieBookingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B22A53289D6C1900329D3F /* Debug */,
+				67B22A54289D6C1900329D3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6702E20627C35FCF005AF1E9 /* Project object */;
+}

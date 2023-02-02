@@ -59,7 +59,7 @@ DEPENDENCIES:
   - RxCocoa (= 6.5.0)
   - RxRealm
   - RxSwift (= 6.5.0)
-  - SDWebImage (~> 5.0)
+  - SDWebImage
   - SideMenu
   - UPCarouselFlowLayout
   - Wormholy
@@ -117,6 +117,6 @@ SPEC CHECKSUMS:
   UPCarouselFlowLayout: 4c7d2c43a10ebb1597bde502a53699d378341dad
   Wormholy: 3252bc3e55a1847ef9a0976c1377bd77bf3635fa
 
-PODFILE CHECKSUM: 62e13b6f2927314658f50917882628052da579fc
+PODFILE CHECKSUM: ec8be7b9456852ff21d343a4a3bb661a4f225f9b
 
 COCOAPODS: 1.11.3

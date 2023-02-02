@@ -11,7 +11,7 @@ target 'movieBookingApp' do
   pod 'DGCarouselFlowLayout', :git => 'https://github.com/donggyushin/DGCarouselFlowLayout'
   pod 'UPCarouselFlowLayout'
   pod 'Alamofire', '~> 5.5'
-  pod 'SDWebImage', '~> 5.0'
+  pod 'SDWebImage'
   pod 'Wormholy', :configurations => ['Debug']
   pod 'GoogleSignIn'
   pod 'GoogleSignInSwiftSupport'
